@@ -16,7 +16,7 @@ main.asc: main.json
 	nextpnr-ice40 --${FPGA_TYPE} --package ${FPGA_PKG} --json $< --pcf ${PCF} --asc $@
 
 main.rpt: main.asc
-	icetime -d ${FPGA_TYPE} -mtr $@ $<
+	icetime -d ${FPGA_TYPE} -p ${PCF} -P ${FPGA_PKG} -mtr $@ $<
 
 main.bin: main.asc
 	icepack $< $@

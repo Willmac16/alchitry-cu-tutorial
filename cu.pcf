@@ -1,5 +1,7 @@
 # Clock
+set_frequency  clk 100 
 set_io clk P7
+
 # Reset
 set_io rst P8
 

@@ -19,5 +19,4 @@ module top(
     assign LED = counter[COUNTER_WIDTH-1:COUNTER_WIDTH-8];
     assign IO_LED = counter[COUNTER_WIDTH-9:COUNTER_WIDTH-(8 + 24)];
 
-
 endmodule
